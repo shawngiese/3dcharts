@@ -1,0 +1,21 @@
+/*
+---
+name: JSON data from REST API
+description: An example of plugging REST data into a visualization. This visualization is from https://github.com/sghall/d3-threejs
+authors:
+  - 
+resources:
+  - http://b620b5c29b52b0906d6f-e14478edff9ea40410d3a0712065bea5.r29.cf1.rackcdn.com/three.min.js
+  - http://b620b5c29b52b0906d6f-e14478edff9ea40410d3a0712065bea5.r29.cf1.rackcdn.com/tween.js
+  - http://b620b5c29b52b0906d6f-e14478edff9ea40410d3a0712065bea5.r29.cf1.rackcdn.com/CSS3DRenderer.js
+  - http://b620b5c29b52b0906d6f-e14478edff9ea40410d3a0712065bea5.r29.cf1.rackcdn.com/TrackballControls.js
+  - http://b620b5c29b52b0906d6f-e14478edff9ea40410d3a0712065bea5.r29.cf1.rackcdn.com/OrbitControls.js
+  - http://b620b5c29b52b0906d6f-e14478edff9ea40410d3a0712065bea5.r29.cf1.rackcdn.com/d3.min.js
+  - http://b620b5c29b52b0906d6f-e14478edff9ea40410d3a0712065bea5.r29.cf1.rackcdn.com/viz.js
+normalize_css: no
+lang_css: CSS
+wrap: l
+...
+*/
+
+<p>Data for loading from the following URL: http://jsfiddle.net/gh/get/jquery/2.1/shawngiese/3dcharts/tree/master/</p> 
