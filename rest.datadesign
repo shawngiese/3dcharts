@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+    <list-property name="propertyBindings">
+        <structure>
+            <property name="name">queryText</property>
+            <property name="id">30</property>
+        </structure>
+        <structure>
+            <property name="name">queryTimeOut</property>
+            <property name="id">30</property>
+        </structure>
+        <structure>
+            <property name="name">rowFetchSize</property>
+            <property name="id">30</property>
+        </structure>
+        <structure>
+            <property name="name">queryText</property>
+            <property name="id">29</property>
+        </structure>
+        <structure>
+            <property name="name">queryTimeOut</property>
+            <property name="id">29</property>
+        </structure>
+        <structure>
+            <property name="name">rowFetchSize</property>
+            <property name="id">29</property>
+        </structure>
+        <structure>
+            <property name="name">queryText</property>
+            <property name="id">32</property>
+        </structure>
+        <structure>
+            <property name="name">queryTimeOut</property>
+            <property name="id">32</property>
+        </structure>
+        <structure>
+            <property name="name">rowFetchSize</property>
+            <property name="id">32</property>
+        </structure>
+    </list-property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Data Source" id="7">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">org.eclipse.birt.report.data.oda.sampledb.Driver</property>
+            <property name="odaURL">jdbc:classicmodels:sampledb</property>
+            <property name="odaUser">ClassicModels</property>
+        </oda-data-source>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc.dbprofile" name="Data Source1" id="8">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>org.eclipse.datatools.connectivity.db.connectionProperties</name>
+                </ex-property>
+                <ex-property>
+                    <name>org.eclipse.datatools.connectivity.oda.profile.db.provider.id</name>
+                    <value>org.eclipse.datatools.connectivity.db.derby.embedded.connectionProfile</value>
+                </ex-property>
+                <ex-property>
+                    <name>org.eclipse.datatools.connectivity.db.savePWD</name>
+                    <value>true</value>
+                </ex-property>
+                <ex-property>
+                    <name>org.eclipse.datatools.connectivity.drivers.defnType</name>
+                    <value>org.eclipse.birt.report.data.oda.jdbc.dbprofile.sampledb.driverTemplate</value>
+                </ex-property>
+                <ex-property>
+                    <name>org.eclipse.datatools.connectivity.driverDefinitionID</name>
+                    <value>DriverDefn.org.eclipse.birt.report.data.oda.jdbc.dbprofile.sampledb.driverTemplate.BIRT SampleDb Derby Embedded Driver</value>
+                </ex-property>
+                <ex-property>
+                    <name>org.eclipse.datatools.connectivity.db.version</name>
+                    <value>10.2</value>
+                </ex-property>
+                <ex-property>
+                    <name>org.eclipse.datatools.connectivity.db.vendor</name>
+                    <value>Derby</value>
+                </ex-property>
+            </list-property>
+            <property name="databaseName">org.eclipse.birt.report.data.oda.jdbc.dbprofile.sampledb/db/BirtSample</property>
+            <property name="username">ClassicModels</property>
+            <encrypted-property name="password" encryptionID="jce">caab65efdde92e0b</encrypted-property>
+            <property name="URL">jdbc:derby:C:\Users\sgiese\workspaceTraining\.metadata\.plugins\org.eclipse.birt.report.data.oda.jdbc.dbprofile.sampledb/db/BirtSample</property>
+            <property name="driverClass">org.apache.derby.jdbc.EmbeddedDriver</property>
+            <property name="jarList">D:\BDPro\eclipse\plugins\org.apache.derby.core_10.5.1.1_v20131216-0430\derby.jar</property>
+        </oda-data-source>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Classic Models" id="2">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">org.eclipse.birt.report.data.oda.sampledb.Driver</property>
+            <property name="odaURL">jdbc:classicmodels:sampledb</property>
+            <property name="odaUser">ClassicModels</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.dbprofile.sqbDataSet" name="Data Set" id="9">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">customer</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">customer</text-property>
+                    <text-property name="heading">customer</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">date</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">date</text-property>
+                    <text-property name="heading">date</text-property>
+                    <property name="horizontalAlign">left</property>
+                    <structure name="valueFormat">
+                        <property name="category">Custom</property>
+                        <property name="pattern">yyyy</property>
+                    </structure>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">orders</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">orders</text-property>
+                    <text-property name="heading">orders</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">group</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">group</text-property>
+                    <text-property name="heading">group</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">customer</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">date</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">orders</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">group</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source1</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">customer</property>
+                    <property name="nativeName">customer</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">date</property>
+                    <property name="nativeName">date</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">orders</property>
+                    <property name="nativeName">orders</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">group</property>
+                    <property name="nativeName">group</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT CLASSICMODELS.CUSTOMERS.CUSTOMERNAME AS "customer", CLASSICMODELS.ORDERS.ORDERDATE AS "date",
+    CLASSICMODELS.ORDERDETAILS.QUANTITYORDERED AS "orders", CLASSICMODELS.PRODUCTS.PRODUCTLINE AS "group"
+    FROM
+         CLASSICMODELS.CUSTOMERS JOIN CLASSICMODELS.ORDERS ON CLASSICMODELS.CUSTOMERS.CUSTOMERNUMBER = CLASSICMODELS.ORDERS.CUSTOMERNUMBER JOIN CLASSICMODELS.ORDERDETAILS ON CLASSICMODELS.ORDERS.ORDERNUMBER = CLASSICMODELS.ORDERDETAILS.ORDERNUMBER JOIN CLASSICMODELS.PRODUCTS ON CLASSICMODELS.ORDERDETAILS.PRODUCTCODE = CLASSICMODELS.PRODUCTS.PRODUCTCODE
+  ]]></xml-property>
+            <structure name="designerState">
+                <property name="version">1.0</property>
+                <property name="stateContentAsString">&lt;?xml version="1.0" encoding="UTF-8"?>&#13;
+&lt;SQLQueryBuilder editorInputType="SQLBuilderStorageEditorInput" name="Data Set" version="1.0">&#13;
+&lt;SQLStatement>SELECT CLASSICMODELS.CUSTOMERS.CUSTOMERNAME AS &amp;quot;customer&amp;quot;, CLASSICMODELS.ORDERS.ORDERDATE AS &amp;quot;date&amp;quot;,&amp;#x0A;    CLASSICMODELS.ORDERDETAILS.QUANTITYORDERED AS &amp;quot;orders&amp;quot;, CLASSICMODELS.PRODUCTS.PRODUCTLINE AS &amp;quot;group&amp;quot;&amp;#x0A;    FROM&amp;#x0A;         CLASSICMODELS.CUSTOMERS JOIN CLASSICMODELS.ORDERS ON CLASSICMODELS.CUSTOMERS.CUSTOMERNUMBER = CLASSICMODELS.ORDERS.CUSTOMERNUMBER JOIN CLASSICMODELS.ORDERDETAILS ON CLASSICMODELS.ORDERS.ORDERNUMBER = CLASSICMODELS.ORDERDETAILS.ORDERNUMBER JOIN CLASSICMODELS.PRODUCTS ON CLASSICMODELS.ORDERDETAILS.PRODUCTCODE = CLASSICMODELS.PRODUCTS.PRODUCTCODE&amp;#x0A;  &lt;/SQLStatement>&#13;
+&lt;connInfo>Derby_10.x:Transient.org.eclipse.datatools.connectivity.db.derby.embedded.connectionProfile:BirtSample:ClassicModels&lt;/connInfo>&#13;
+&lt;omitSchemaInfo>false:true:&lt;/omitSchemaInfo>&#13;
+&lt;editorInputUsageOptions>useWindowState=true&lt;/editorInputUsageOptions>&#13;
+&lt;windowState height="904" version="1.0" width="1611">&#13;
+&lt;control height="284" isHideable="true" isVisible="true" name="SQLSourceViewer" width="1584"/>&#13;
+&lt;control height="295" isHideable="true" isVisible="true" name="DesignViewer" width="1597"/>&#13;
+&lt;control height="287" isHideable="true" isVisible="true" name="GraphControl" width="1589"/>&#13;
+&lt;control height="291" isHideable="true" isVisible="false" name="OutlineViewer" width="180"/>&#13;
+&lt;/windowState>&#13;
+&lt;/SQLQueryBuilder></property>
+            </structure>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>customer</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>customer</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>customer</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>date</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>91</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>date</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>date</design:label>
+            <design:formattingHints>
+              <design:displaySize>10</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>qty</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>qty</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>qty</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>group</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>group</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>group</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria>
+        <design:rowOrdering/>
+      </design:criteria>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Data Set 2" id="29">
+            <property name="isVisible">true</property>
+            <property name="nullsOrdering">nulls lowest</property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">customer</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">customer</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">customer</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">date</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">date</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">date</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">ORDERNUMBER</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">ORDERNUMBER</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">ORDERNUMBER</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">qty</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">qty</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">qty</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">line</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">line</text-property>
+                    <text-property name="heading">line</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <list-property name="sortHints"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">customer</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">date</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">ORDERNUMBER</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">qty</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">line</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">customer</property>
+                    <property name="nativeName">customer</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">date</property>
+                    <property name="nativeName">date</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">ORDERNUMBER</property>
+                    <property name="nativeName">ORDERNUMBER</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">qty</property>
+                    <property name="nativeName">qty</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">line</property>
+                    <property name="nativeName">line</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT CLASSICMODELS.CUSTOMERS.CUSTOMERNAME AS "customer", year(CLASSICMODELS.ORDERS.ORDERDATE) AS "date", CLASSICMODELS.ORDERS.ORDERNUMBER,
+    CLASSICMODELS.ORDERDETAILS.QUANTITYORDERED AS "qty", CLASSICMODELS.PRODUCTS.PRODUCTLINE AS "line"
+    FROM
+         CLASSICMODELS.CUSTOMERS JOIN CLASSICMODELS.ORDERS ON CLASSICMODELS.CUSTOMERS.CUSTOMERNUMBER = CLASSICMODELS.ORDERS.CUSTOMERNUMBER JOIN CLASSICMODELS.ORDERDETAILS ON CLASSICMODELS.ORDERS.ORDERNUMBER = CLASSICMODELS.ORDERDETAILS.ORDERNUMBER JOIN CLASSICMODELS.PRODUCTS ON CLASSICMODELS.ORDERDETAILS.PRODUCTCODE = CLASSICMODELS.PRODUCTS.PRODUCTCODE
+ORDER BY CLASSICMODELS.CUSTOMERS.CUSTOMERNAME,  year(CLASSICMODELS.ORDERS.ORDERDATE), CLASSICMODELS.PRODUCTS.PRODUCTLINE ASC    ]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Data Set 3" id="30">
+            <property name="isVisible">true</property>
+            <property name="nullsOrdering">nulls lowest</property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">ORDERNUMBER</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">ORDERNUMBER</text-property>
+                    <text-property name="heading">ORDERNUMBER</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">2</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">2</text-property>
+                    <text-property name="heading">2</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">ORDERNUMBER</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">2</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">ORDERNUMBER</property>
+                    <property name="nativeName">ORDERNUMBER</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">2</property>
+                    <property name="nativeName">2</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select CLASSICMODELS.ORDERDETAILS.ORDERNUMBER, sum(CLASSICMODELS.ORDERDETAILS.QUANTITYORDERED)
+from CLASSICMODELS.ORDERDETAILS
+Group by CLASSICMODELS.ORDERDETAILS.ORDERNUMBER]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>1</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>1</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>1</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Data Set 4" id="31">
+            <property name="isVisible">true</property>
+            <property name="nullsOrdering">nulls lowest</property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">customer</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">customer</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">customer</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">date</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">date</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">date</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">line</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">line</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">line</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">orders</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">orders</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">orders</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">qty</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">qty</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">qty</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <list-property name="sortHints">
+                <structure>
+                    <property name="columnName">dataSetRow["customer"]</property>
+                    <property name="direction">asc</property>
+                    <property name="isOptional">true</property>
+                </structure>
+                <structure>
+                    <property name="columnName">dataSetRow["date"]</property>
+                    <property name="direction">asc</property>
+                    <property name="isOptional">true</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">customer</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">date</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">line</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">orders</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">qty</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">customer</property>
+                    <property name="nativeName">customer</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">date</property>
+                    <property name="nativeName">date</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">line</property>
+                    <property name="nativeName">line</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">orders</property>
+                    <property name="nativeName">orders</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">qty</property>
+                    <property name="nativeName">qty</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT 	CLASSICMODELS.CUSTOMERS.CUSTOMERNAME AS "customer", 
+		YEAR(CLASSICMODELS.ORDERS.ORDERDATE) AS "date", 
+    	CLASSICMODELS.PRODUCTS.PRODUCTLINE AS "line",
+		COUNT(CLASSICMODELS.ORDERS.ORDERNUMBER) AS "orders",
+    	SUM(CLASSICMODELS.ORDERDETAILS.QUANTITYORDERED) AS "qty"
+
+FROM
+         CLASSICMODELS.CUSTOMERS 
+         JOIN CLASSICMODELS.ORDERS ON CLASSICMODELS.CUSTOMERS.CUSTOMERNUMBER = CLASSICMODELS.ORDERS.CUSTOMERNUMBER 
+         JOIN CLASSICMODELS.ORDERDETAILS ON CLASSICMODELS.ORDERS.ORDERNUMBER = CLASSICMODELS.ORDERDETAILS.ORDERNUMBER 
+         JOIN CLASSICMODELS.PRODUCTS ON CLASSICMODELS.ORDERDETAILS.PRODUCTCODE = CLASSICMODELS.PRODUCTS.PRODUCTCODE
+GROUP BY 
+		 CLASSICMODELS.CUSTOMERS.CUSTOMERNAME, 
+		 YEAR(CLASSICMODELS.ORDERS.ORDERDATE), 
+		 CLASSICMODELS.PRODUCTS.PRODUCTLINE
+ORDER BY 
+		 CLASSICMODELS.CUSTOMERS.CUSTOMERNAME, 
+		 YEAR(CLASSICMODELS.ORDERS.ORDERDATE), 
+		 CLASSICMODELS.PRODUCTS.PRODUCTLINE ASC    ]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Data Set 5" id="32">
+            <property name="isVisible">true</property>
+            <property name="nullsOrdering">nulls lowest</property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">customer</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">customer</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">customer</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">date</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">date</text-property>
+                    <property name="onColumnLayout">false</property>
+                    <text-property name="heading">date</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">CLASSIC</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">CLASSIC</text-property>
+                    <text-property name="heading">CLASSIC</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">VINTAGE</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">VINTAGE</text-property>
+                    <text-property name="heading">VINTAGE</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">MOTORCY</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">MOTORCY</text-property>
+                    <text-property name="heading">MOTORCY</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">PLANES</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">PLANES</text-property>
+                    <text-property name="heading">PLANES</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">TRUCKS</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">TRUCKS</text-property>
+                    <text-property name="heading">TRUCKS</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">TRAINS</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">TRAINS</text-property>
+                    <text-property name="heading">TRAINS</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">SHIPS</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">SHIPS</text-property>
+                    <text-property name="heading">SHIPS</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">OTHER</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">OTHER</text-property>
+                    <text-property name="heading">OTHER</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">customer</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">date</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">CLASSIC</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">VINTAGE</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">MOTORCY</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">PLANES</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">TRUCKS</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">TRAINS</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">SHIPS</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">OTHER</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Classic Models</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">customer</property>
+                    <property name="nativeName">customer</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">date</property>
+                    <property name="nativeName">date</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">CLASSIC</property>
+                    <property name="nativeName">CLASSIC</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">VINTAGE</property>
+                    <property name="nativeName">VINTAGE</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">MOTORCY</property>
+                    <property name="nativeName">MOTORCY</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">PLANES</property>
+                    <property name="nativeName">PLANES</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">TRUCKS</property>
+                    <property name="nativeName">TRUCKS</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">TRAINS</property>
+                    <property name="nativeName">TRAINS</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">SHIPS</property>
+                    <property name="nativeName">SHIPS</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">OTHER</property>
+                    <property name="nativeName">OTHER</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT 	CLASSICMODELS.CUSTOMERS.CUSTOMERNAME AS "customer", 
+		YEAR(CLASSICMODELS.ORDERS.ORDERDATE) AS "date", 
+		SUM(CASE WHEN CLASSICMODELS.PRODUCTS.PRODUCTLINE='Classic Cars' THEN CLASSICMODELS.ORDERDETAILS.QUANTITYORDERED ELSE 0 END)/5 AS "CLASSIC",
+		SUM(CASE WHEN CLASSICMODELS.PRODUCTS.PRODUCTLINE='Vintage Cars' THEN CLASSICMODELS.ORDERDETAILS.QUANTITYORDERED ELSE 0 END)/5 AS "VINTAGE",
+		SUM(CASE WHEN CLASSICMODELS.PRODUCTS.PRODUCTLINE='Motorcycles' THEN CLASSICMODELS.ORDERDETAILS.QUANTITYORDERED ELSE 0 END)/5 AS "MOTORCY",
+		SUM(CASE WHEN CLASSICMODELS.PRODUCTS.PRODUCTLINE='Planes' THEN CLASSICMODELS.ORDERDETAILS.QUANTITYORDERED ELSE 0 END)/5 AS "PLANES",
+		SUM(CASE WHEN CLASSICMODELS.PRODUCTS.PRODUCTLINE='Trucks and Buses' THEN CLASSICMODELS.ORDERDETAILS.QUANTITYORDERED ELSE 0 END)/5 AS "TRUCKS",
+		SUM(CASE WHEN CLASSICMODELS.PRODUCTS.PRODUCTLINE='Trains' THEN CLASSICMODELS.ORDERDETAILS.QUANTITYORDERED ELSE 0 END)/5 AS "TRAINS",
+		SUM(CASE WHEN CLASSICMODELS.PRODUCTS.PRODUCTLINE='Ships' THEN CLASSICMODELS.ORDERDETAILS.QUANTITYORDERED ELSE 0 END)/5 AS "SHIPS",
+		SUM(CASE WHEN CLASSICMODELS.PRODUCTS.PRODUCTLINE='Other' THEN CLASSICMODELS.ORDERDETAILS.QUANTITYORDERED ELSE 0 END)/5 AS "OTHER"
+
+FROM
+         CLASSICMODELS.CUSTOMERS 
+         JOIN CLASSICMODELS.ORDERS ON CLASSICMODELS.CUSTOMERS.CUSTOMERNUMBER = CLASSICMODELS.ORDERS.CUSTOMERNUMBER 
+         JOIN CLASSICMODELS.ORDERDETAILS ON CLASSICMODELS.ORDERS.ORDERNUMBER = CLASSICMODELS.ORDERDETAILS.ORDERNUMBER 
+         JOIN CLASSICMODELS.PRODUCTS ON CLASSICMODELS.ORDERDETAILS.PRODUCTCODE = CLASSICMODELS.PRODUCTS.PRODUCTCODE
+
+GROUP BY 
+		 CLASSICMODELS.CUSTOMERS.CUSTOMERNAME, 
+		 YEAR(CLASSICMODELS.ORDERS.ORDERDATE)
+]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>customer</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>customer</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>customer</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>date</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>date</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>date</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>line</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>50</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>line</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>line</design:label>
+            <design:formattingHints>
+              <design:displaySize>50</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>orders</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>orders</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>orders</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>qty</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>qty</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>qty</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+</datamart>
